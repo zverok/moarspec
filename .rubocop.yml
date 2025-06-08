@@ -1,0 +1,74 @@
+inherit_from: .rubocop_todo.yml
+#require: rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  Include:
+    - 'lib/**/*'
+  Exclude:
+    - 'tmp/**'
+    - 'lib/moarspec/matchers/request_webmock.rb'
+    - 'vendor/**/*'
+  DisplayCopNames: true
+  TargetRubyVersion: 3.1
+  SuggestExtensions: false
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
+Naming/PredicatePrefix:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 100
+  AllowedPatterns: ['\#.*'] # ignore long comments
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    default: '{}'
+
+Style/AndOr:
+  EnforcedStyle: conditionals
+
+Style/Documentation:
+  Enabled: false
+
+Style/SignalException:
+  EnforcedStyle: semantic
+
+Style/FormatStringToken:
+  Enabled: false
+
+Style/EmptyCaseCondition:
+  Enabled: false
+
+Style/CaseEquality:
+  Enabled: false
+
+Naming/MethodParameterName:
+  Enabled: false
+
+# Should always be configured:
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+Metrics/AbcSize:
+  Max: 30
+
+Style/NumberedParametersLimit:
+  Max: 2

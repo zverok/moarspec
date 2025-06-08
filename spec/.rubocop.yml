@@ -1,0 +1,13 @@
+inherit_from: ../.rubocop.yml
+
+Metrics/LineLength:
+  Max: 120
+
+Style/BlockDelimiters:
+  Enabled: false
+
+Style/Semicolon:
+  Enabled: false
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
