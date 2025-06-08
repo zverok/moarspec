@@ -60,7 +60,13 @@ module Moarspec
       # This is dirty, but I don't see another way.
       if Object.instance_methods.include?(:with)
         def with(...)
-          @matcher.with(...)
+          if @matcher
+            @matcher.with(...)
+          else
+            @matcher = @delegator.with(...)
+          end
+
+          self
         end
       end
 

@@ -1,5 +1,9 @@
 # Moarspec history
 
+## 0.1.2
+
+* Fix `dont.<matcher>.with(args)` behavior in the presence of ActiveSupport 7.1+.
+
 ## 0.1.1
 
 * Make `it_with`/`its_block_with` available by default when the whole of `moarspec` is required.
