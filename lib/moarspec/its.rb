@@ -47,3 +47,5 @@ end
 require_relative 'its/map'
 require_relative 'its/block'
 require_relative 'its/call'
+require_relative 'its/with'
+require_relative 'its/block_with'

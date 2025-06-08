@@ -1,5 +1,9 @@
 # Moarspec history
 
+## 0.1.1
+
+* Make `it_with`/`its_block_with` available by default when the whole of `moarspec` is required.
+
 ## 0.1.0
 
 * Rename to [moarspec](https://rubygems.org/gems/moarspec)
